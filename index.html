@@ -6,10 +6,12 @@
         <title>Flenix</title>
 
         <link rel='stylesheet' id='main-css'  href='style.css' type='text/css' media='all' />
+        <script src="main.js" async></script>
     </head>
     <body>
         <section class="mini-game">
-            <div class="person-container">
+            <div class="canada-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="person-container" draggable="true" ondragstart="drag(event)">
                 <div class="ear">
                     <div class="inner"></div>
                 </div>
@@ -75,21 +77,23 @@
                 </div>
             </div>
         </section>
-        <header>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#cv">Curriculum vitae</a></li>
-                    <li><a href="#references">References</a></li>
-                    <li><a href="#attachements">Attachements</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
+        <div class="page">
+            <header>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#cv">Curriculum vitae</a></li>
+                        <li><a href="#references">References</a></li>
+                        <li><a href="#attachements">Attachements</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
 
-        </main>
-        <footer>
+            </main>
+            <footer>
 
-        </footer>
+            </footer>
+        </div>
     </body>
 </html>
