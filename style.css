@@ -390,6 +390,27 @@ template {
   height: 300px;
 }
 
+.hat {
+  background: darkred;
+  width: 110px;
+  height: 85px;
+  border-radius: 50px 50px 0 0;
+  position: absolute;
+  z-index: 2;
+  left: 35px;
+  top: -38px;
+}
+
+.hat-ring {
+  background: darkred;
+  height: 15px;
+  width: 200px;
+  top: 70px;
+  position: absolute;
+  left: -45px;
+  border-radius: 50%;
+}
+
 .head {
   position: absolute;
   top: 30px;
@@ -397,19 +418,20 @@ template {
   height: 140px;
   background: #947267;
   border-radius: 90%;
+  z-index: 1;
   border-bottom-left-radius: 180px;
   border-bottom-right-radius: 180px;
 }
 
 .hair {
   position: absolute;
-  top: -1px;
+  top: 7px;
   left: 70px;
-  background: #947267;
+  background: darkred;
   width: 20px;
   height: 20px;
   border-radius: 100% 0 100% 100%;
-  transform: rotate(-20deg);
+  transform: rotate(113deg);
 }
 
 .hair.two {
@@ -560,19 +582,21 @@ template {
   left: 10px;
   top: 130px;
   width: 160px;
-  height: 180px;
-  background: #947267;
+  height: 150px;
+  background: red;
   border-radius: 100% 100% 40% 40%;
+  border-bottom: 30px solid #947267;
 }
 
-.west {
+.diagonal-belt {
   position: absolute;
-  left: 10px;
-  top: 177px;
-  width: 160px;
-  height: 100px;
-  background: red;
-  border-radius: 100% 100% 15% 15%;
+  width: 100%;
+  background-color: brown;
+  display: block;
+  height: 20px;
+  bottom: 0px;
+  top: 73px;
+  transform: rotate(130deg);
 }
 
 .belt {
@@ -592,6 +616,7 @@ template {
   height: 40px;
   transform: translateX(-50%);
   background-color: darkred;
+  z-index: 1;
 }
 
 .pocket-left:before {
@@ -657,23 +682,12 @@ template {
   outline: 3px solid yellow;
 }
 
-.collar {
-  width: 114px;
-  height: 60px;
-  border-radius: 50%;
-  box-shadow: 0px 15px 0 0 red;
-  z-index: 1000;
-  position: absolute;
-  top: 117px;
-  left: 33px;
-}
-
 .badge {
   background: black;
   display: inline-block;
   height: 5px;
-  left: 45px;
-  top: 60px;
+  left: 79px;
+  top: 170px;
   position: relative;
   width: 25px;
   transform: rotate(180deg);
