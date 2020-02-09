@@ -15,14 +15,26 @@
   height: 85px;
   border-radius: 50px 50px 0 0;
   position: absolute;
-  z-index: 2;
   left: 35px;
-  top: -38px;
+  z-index: 3;
+  top: -43px;
+}
+
+.hat-band {
+  width: 114px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0px 15px 0 0 red;
+  position: absolute;
+  top: 32px;
+  left: -2px;
+  z-index: 1;
+  transform: rotateX(69deg);
 }
 
 .hat-ring {
   background: darkred;
-  height: 15px;
+  height: 24px;
   width: 200px;
   top: 70px;
   position: absolute;
@@ -37,7 +49,7 @@
   height: 140px;
   background: #947267;
   border-radius: 90%;
-  z-index: 1;
+  z-index: 2;
   border-bottom-left-radius: 180px;
   border-bottom-right-radius: 180px;
 }
@@ -216,6 +228,17 @@
   bottom: 0px;
   top: 73px;
   transform: rotate(130deg);
+  z-index: 1;
+  border-radius: 40% 40% 40% 0%;
+}
+
+.sip-line {
+  width: 11px;
+  height: 85px;
+  position: absolute;
+  background-color: darkred;
+  left: 77px;
+  top: 45px;
 }
 
 .belt {
@@ -235,7 +258,7 @@
   height: 40px;
   transform: translateX(-50%);
   background-color: darkred;
-  z-index: 1;
+  z-index: 2;
 }
 
 .pocket-left:before {
@@ -292,24 +315,25 @@
 
 .buckle {
   position: absolute;
-  left: 50%;
+  left: 73px;
   top: 0;
   display: block;
   width: 20px;
   height: 20px;
-  transform: translateX(-50%);
   outline: 3px solid yellow;
+  z-index: 1;
 }
 
 .badge {
   background: black;
   display: inline-block;
   height: 5px;
-  left: 79px;
-  top: 170px;
+  left: 70px;
+  top: 40px;
   position: relative;
   width: 25px;
   transform: rotate(180deg);
+  z-index: 2;
 }
 
 .badge:before {
@@ -324,24 +348,33 @@
   width: 0;
 }
 
-.goldendot-left {
+.goldendot {
   border-radius: 50%;
   width: 2px;
   height: 2px;
-  display: block;
   background-color: yellow;
   right: 5px;
   position: absolute;
 }
 
-.goldendot-right {
-  border-radius: 50%;
-  width: 2px;
-  height: 2px;
-  display: block;
-  background-color: yellow;
+.goldendot.right {
+  right: 5px;
+}
+
+.goldendot.left {
   left: 5px;
-  position: absolute;
+}
+
+.goldendot.top {
+  top: 11px;
+}
+
+.goldendot.middle {
+  top: 58px;
+}
+
+.goldendot.bottom {
+  top: 71px;
 }
 
 .tail {
@@ -378,6 +411,7 @@
   width: 50px;
   height: 20px;
   border: 3px solid #83665B;
+  background-color: #83665B;
   border-left: none;
   border-radius: 100% 100% 100% 30%;
   transform: rotate(20deg);
@@ -393,7 +427,7 @@
 
 .tail_stripe {
   position: absolute;
-  left: 10px;
+  left: 15px;
   width: 2px;
   height: 100px;
   background: #FFF;
